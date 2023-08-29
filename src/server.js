@@ -1,7 +1,7 @@
 const express = require("express");
 const pug = require("pug");
 const path = require("path");
-const morgan = require('morgan')
+const morgan = require("morgan");
 
 //Inicializaciones
 const app = express();
@@ -14,11 +14,7 @@ app.use(express.urlencoded({ extended: false }));
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
 
-
-
 //rutas
-app.use(require('./routes/indexRoute.js'));
-
+app.use(require("./routes/indexRoute.js"));
 
 module.exports = app;
-

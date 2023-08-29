@@ -1,15 +1,16 @@
-const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://prvd_dev:xJdTQZ5VPeB9V9wm@cluster0.cu4ht07.mongodb.net/evoting-app?retryWrites=true&w=majority";
-const mongoose = require('mongoose')
+const { MongoClient, ServerApiVersion } = require("mongodb");
+const uri =
+  "mongodb+srv://prvd_dev:xJdTQZ5VPeB9V9wm@cluster0.cu4ht07.mongodb.net/evoting-app?retryWrites=true&w=majority";
+const mongoose = require("mongoose");
 
-mongoose.connect(uri)
-  .then(()=>{
+mongoose
+  .connect(uri)
+  .then(() => {
     console.log("Connected to MongoDB");
   })
-  .catch(()=>{
+  .catch(() => {
     console.log("Couldn't connect to MongoDB");
-  })
-
+  });
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 /* const client = new MongoClient(uri, {
