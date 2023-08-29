@@ -17,7 +17,7 @@ app.set("views", path.join(__dirname, "views"));
 
 
 //rutas
-app.use(require('./routes/routes.js'));
+app.use(require('./routes/indexRoute.js'));
 
 
 module.exports = app;
